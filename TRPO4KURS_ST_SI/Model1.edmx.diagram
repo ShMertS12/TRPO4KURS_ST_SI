@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1bec398586954c2a90e3b53d0515188e" Name="Diagram1">
+      <Diagram DiagramId="6efbd1f7358a4c94bac2a479b2b70e31" Name="Diagram1">
         <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Category" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
         <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Customer" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Orders" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
@@ -12,7 +12,7 @@
         <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Roles" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Shipment" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
         <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Shipper" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Users" Width="1.5" PointX="5.625" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SAVSAA_Material_storageModel.Users" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
         <AssociationConnector Association="SAVSAA_Material_storageModel.FK_Product_Category" ManuallyRouted="false" />
         <AssociationConnector Association="SAVSAA_Material_storageModel.FK_Customer_Orders" ManuallyRouted="false" />
         <AssociationConnector Association="SAVSAA_Material_storageModel.FK_Orders_Product" ManuallyRouted="false" />
