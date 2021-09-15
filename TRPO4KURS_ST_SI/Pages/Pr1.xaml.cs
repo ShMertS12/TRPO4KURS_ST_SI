@@ -31,9 +31,11 @@ namespace TRPO4KURS_ST_SI.Pages
             {
                 MessageBox.Show("Введите логин и пароль");
                 return;
+
+               
             }
 
-            using (var db = new SAVSAA_Material_storageEntities())
+            using (var db = new SAVSAA_Material_storageEntities1())
             {
                 var user = db.Users.AsNoTracking().FirstOrDefault(u => u.Login == TLB.Text);
 
@@ -57,6 +59,10 @@ namespace TRPO4KURS_ST_SI.Pages
 
                     case 1:
                         NavigationService?.Navigate(new CustomerMenu());
+                        break;
+
+                    case 3:
+                        MessageBox.Show("Фиксер");
                         break;
                 } 
 

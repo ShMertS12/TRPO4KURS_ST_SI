@@ -24,7 +24,7 @@ namespace TRPO4KURS_ST_SI
         {
             InitializeComponent();
 
-            using (var db = new SAVSAA_Material_storageEntities())
+            using (var db = new SAVSAA_Material_storageEntities1())
             {
                 var users = db.Users.AsNoTracking().ToList();
                 foreach (var usya in users)
@@ -33,10 +33,31 @@ namespace TRPO4KURS_ST_SI
                 }
                 
             }
-            using (var db = new SAVSAA_Material_storageEntities())
+            using (var db = new SAVSAA_Material_storageEntities1())
             {
                 var users = db.Users.AsNoTracking().Where(u => u.Login.StartsWith("B")).ToList();
                 
+            }
+        }
+
+       
+
+        private void ButBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"Lesson - {page.Title}";
+            if(page is Pages.Pr1)
+            {
+                ButBack.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                ButBack.Visibility = Visibility.Visible;
             }
         }
     }

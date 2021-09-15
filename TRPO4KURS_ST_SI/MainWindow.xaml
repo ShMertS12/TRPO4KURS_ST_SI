@@ -16,12 +16,14 @@
         <Frame x:Name="MainFrame" 
                Grid.Row="1"
                NavigationUIVisibility="Hidden"
-               Source="Pages/Pr1.xaml"/>
+               Source="Pages/Pr1.xaml"
+               Navigated="MainFrame_Navigated"/>
 
-        <Button Content="Назад" 
+        <Button x:Name="ButBack"
+                Content="Назад" 
                 Width="70"
                 Height="25"
                 Margin="10,0,0,0"
-                HorizontalAlignment="Left"/>
+                HorizontalAlignment="Left" Click="ButBack_Click"/>
     </Grid>
 </Window>

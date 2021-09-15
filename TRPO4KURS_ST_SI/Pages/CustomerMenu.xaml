@@ -18,7 +18,12 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="250"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Button FontSize="20" Content="Переход 1" Height="35" Style="{StaticResource BMF}"/>
+            <Button FontSize="20" Content="Переход 2" Height="35" Style="{StaticResource BMF}"/>
+            <Button FontSize="20" Content="Переход 3" Height="35" Style="{StaticResource BMF}"/>
+        </StackPanel>
     </Grid>
 </Page>
