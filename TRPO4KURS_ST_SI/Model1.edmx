@@ -336,7 +336,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SAVSAA_Material_storageEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SAVSAA_Material_storageEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Category" EntityType="Self.Category" />
           <EntitySet Name="Customer" EntityType="Self.Customer" />
           <EntitySet Name="Orders" EntityType="Self.Orders" />
@@ -375,7 +375,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище SAVSAA_Material_storageModelContainer" CdmEntityContainer="SAVSAA_Material_storageEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище SAVSAA_Material_storageModelContainer" CdmEntityContainer="SAVSAA_Material_storageEntities1">
           <EntitySetMapping Name="Category">
             <EntityTypeMapping TypeName="SAVSAA_Material_storageModel.Category">
               <MappingFragment StoreEntitySet="Category">

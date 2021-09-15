@@ -13,10 +13,10 @@ namespace TRPO4KURS_ST_SI
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SAVSAA_Material_storageEntities : DbContext
+    public partial class SAVSAA_Material_storageEntities1 : DbContext
     {
-        public SAVSAA_Material_storageEntities()
-            : base("name=SAVSAA_Material_storageEntities")
+        public SAVSAA_Material_storageEntities1()
+            : base("name=SAVSAA_Material_storageEntities1")
         {
         }
     
