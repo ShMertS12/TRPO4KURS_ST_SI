@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TRPO4KURS_ST_SI.Pages;
 
 namespace TRPO4KURS_ST_SI
 {
@@ -54,11 +55,18 @@ namespace TRPO4KURS_ST_SI
             if(page is Pages.Pr1)
             {
                 ButBack.Visibility = Visibility.Hidden;
+                ButCal.Visibility = Visibility.Hidden;
             }
             else
             {
                 ButBack.Visibility = Visibility.Visible;
+                ButCal.Visibility = Visibility.Visible;
             }
+        }
+
+        private void ButCal_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pr2_Calculator());
         }
     }
 }

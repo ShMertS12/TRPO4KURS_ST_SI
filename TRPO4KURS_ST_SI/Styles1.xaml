@@ -30,5 +30,21 @@
         <Setter Property="Margin" Value="0,5,0,0"/>
         <Setter Property="HorizontalAlignment" Value="Right"/>
     </Style>
+
+    <!--============================================PR2============================================-->
+
+    <Style TargetType="StackPanel" x:Key="SP2">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Orientation" Value="Horizontal"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="BT2">
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontFamily" Value="Impact"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+    
     
 </ResourceDictionary>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TRPO4KURS_ST_SI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FFB5D5CA">
+        Title="MainWindow" Height="500" Width="800" Background="#FFB5D5CA" MinWidth="800" MinHeight="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -19,11 +19,22 @@
                Source="Pages/Pr1.xaml"
                Navigated="MainFrame_Navigated"/>
 
-        <Button x:Name="ButBack"
+        <StackPanel Orientation="Horizontal">
+          <Button x:Name="ButBack"
                 Content="Назад" 
                 Width="70"
                 Height="25"
                 Margin="10,0,0,0"
                 HorizontalAlignment="Left" Click="ButBack_Click"/>
+        <Button x:Name="ButCal"
+                Content="Калькулятор" 
+                Width="75"
+                Height="25"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Left"
+                Click="ButCal_Click"/>  
+        </StackPanel>
+        
+        
     </Grid>
 </Window>
