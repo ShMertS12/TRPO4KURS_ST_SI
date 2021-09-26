@@ -24,6 +24,8 @@ namespace TRPO4KURS_ST_SI.Pages
         public Pr1()
         {
             InitializeComponent();
+            TLB.Text = "administrator";
+            PWB.Password = "1";
         }
 
         private void LogBut_Click(object sender, RoutedEventArgs e)
@@ -68,6 +70,11 @@ namespace TRPO4KURS_ST_SI.Pages
                 } 
 
             }
+        }
+
+        private void RegBut_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new Regis());
         }
     }
 }

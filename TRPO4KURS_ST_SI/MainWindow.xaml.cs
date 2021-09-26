@@ -25,6 +25,7 @@ namespace TRPO4KURS_ST_SI
         {
             InitializeComponent();
 
+
             using (var db = new SAVSAA_Material_storageEntities1())
             {
                 var users = db.Users.AsNoTracking().ToList();
@@ -52,10 +53,10 @@ namespace TRPO4KURS_ST_SI
         {
             if (!(e.Content is Page page)) return;
             this.Title = $"Lesson - {page.Title}";
-            if(page is Pages.Pr1)
+            if(page is Pages.Pr1 || page is Pages.Regis)
             {
-                ButBack.Visibility = Visibility.Hidden;
-                ButCal.Visibility = Visibility.Hidden;
+                ButBack.Visibility = Visibility.Collapsed ;
+                ButCal.Visibility = Visibility.Collapsed;
             }
             else
             {
