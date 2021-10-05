@@ -29,7 +29,7 @@ namespace TRPO4KURS_ST_SI
         public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Product> Product { get; set; }
-        public virtual DbSet<Roles> Roles { get; set; }
+        public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Shipment> Shipment { get; set; }
         public virtual DbSet<Shipper> Shipper { get; set; }
         public virtual DbSet<Users> Users { get; set; }

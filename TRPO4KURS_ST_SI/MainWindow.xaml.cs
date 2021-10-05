@@ -31,7 +31,7 @@ namespace TRPO4KURS_ST_SI
                 var users = db.Users.AsNoTracking().ToList();
                 foreach (var usya in users)
                 {
-                    Console.WriteLine(usya.Roles.Role + " " + usya.Roles.ID);
+                    Console.WriteLine(usya.Role.Title + " " + usya.Role.ID);
                 }
                 
             }

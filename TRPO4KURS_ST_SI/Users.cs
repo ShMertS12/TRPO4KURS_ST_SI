@@ -15,10 +15,11 @@ namespace TRPO4KURS_ST_SI
     public partial class Users
     {
         public int ID { get; set; }
+        public string FIO { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public Nullable<int> IDRole { get; set; }
+        public int RoleID { get; set; }
     
-        public virtual Roles Roles { get; set; }
+        public virtual Role Role { get; set; }
     }
 }

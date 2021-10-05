@@ -103,6 +103,7 @@
                     <StackPanel Style="{StaticResource SP2}">
                         <Button
                             Width="200"
+                            Click="BUTCLICKS"
                             Content="0"
                             Style="{StaticResource BT2}" />
                         <Button Content="," Style="{StaticResource BT2}" />

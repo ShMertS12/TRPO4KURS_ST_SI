@@ -29,7 +29,7 @@ namespace TRPO4KURS_ST_SI.Pages
             InitializeComponent();
         }
 
-        public void BUTCLICKS (object sender, RoutedEventArgs e)
+        public void BUTCLICKS(object sender, RoutedEventArgs e)
         {
             string s = Convert.ToString(((Button)sender).Content);
             TEBL.Text += s;
@@ -78,7 +78,7 @@ namespace TRPO4KURS_ST_SI.Pages
                 }
                 else
                 {
-                    if(rightop != "")
+                    if (rightop != "")
                     {
                         Update_Rightop();
                         leftop = rightop;
@@ -91,30 +91,40 @@ namespace TRPO4KURS_ST_SI.Pages
 
         public void Update_Rightop()
         {
-            int num1 = Int32.Parse(leftop);
-            int num2 = Int32.Parse(rightop);
+                int num1 = Int32.Parse(leftop);
+                int num2 = Int32.Parse(rightop);
 
-            switch (operation)
+
+            try
             {
-                case "+":
-                    rightop=(num1 + num2).ToString();
-                    break;
-                case "-":
-                    rightop=(num1 - num2).ToString();
-                    break;
-                case "*":
-                    rightop=(num1 * num2).ToString();
-                    break;
-                case "/":
-                    rightop=(num1 / num2).ToString();
-                    break;
-               
+                switch (operation)
+                {
+                    case "+":
+                        rightop = (num1 + num2).ToString();
+                        break;
+                    case "-":
+                        rightop = (num1 - num2).ToString();
+                        break;
+                    case "*":
+                        rightop = (num1 * num2).ToString();
+                        break;
+                    case "/":
+                        rightop = (num1 / num2).ToString();
+                        break;
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Возникло исключение");
+                TEBL.Text = "";
             }
 
-           
+
+
         }
 
-     
+
 
         private void CLBT_Click(object sender, RoutedEventArgs e)
         {

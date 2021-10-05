@@ -54,19 +54,16 @@ namespace TRPO4KURS_ST_SI.Pages
                     return;
                 }
 
-                switch(user.IDRole)
+                switch(user.RoleID)
                 {
                     case 2:
-                        MessageBox.Show("Юзер");
+                        NavigationService?.Navigate(new CustomerMenu());
                         break;
 
                     case 1:
                         NavigationService?.Navigate(new CustomerMenu());
                         break;
 
-                    case 3:
-                        MessageBox.Show("Фиксер");
-                        break;
                 } 
 
             }
