@@ -48,6 +48,26 @@
                 Click="ButCal_Click"
                 Content="Калькулятор"
                 FontFamily="Impact" />
+            <Button
+                x:Name="ButEx"
+                Width="75"
+                Height="25"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Left"
+                Background="#FFFFFCD6"
+                Click="ButEx_Click"
+                Content="Экспорт"
+                FontFamily="Impact" />
+            <Button
+                x:Name="ButIm"
+                Width="75"
+                Height="25"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Left"
+                Background="#FFFFFCD6"
+                Click="ButIm_Click"
+                Content="Импорт"
+                FontFamily="Impact" />
         </StackPanel>
 
 
